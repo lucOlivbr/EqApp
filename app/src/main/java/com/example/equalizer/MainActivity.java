@@ -71,8 +71,11 @@ public class MainActivity extends AppCompatActivity {
                 freqTv.setTextSize(11);
                 freqTv.setGravity(android.view.Gravity.CENTER);
                 SeekBar sb = new SeekBar(this);
+                sb.setRotation(270f);
                 sb.setMax(max - min);
                 sb.setProgress(equalizer.getBandLevel(i) - min);
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(180, 150);
+                sb.setLayoutParams(params);
                 TextView dbTv = new TextView(this);
                 dbTv.setText("0dB");
                 dbTv.setTextColor(0xFF90CAF9);
