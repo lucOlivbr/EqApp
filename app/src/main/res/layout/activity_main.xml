@@ -20,11 +20,12 @@
         <Spinner
             android:id="@+id/preset_spinner"
             android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:backgroundTint="#90CAF9"/>
         <LinearLayout
             android:id="@+id/eq_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:orientation="horizontal"
             android:background="#16213E"
             android:padding="12dp"
